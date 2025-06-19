@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | SecureVision</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Header (Same as index.html) -->
+    <header>
+      <div class="logo">
+        <p>cctv@dr.motherboard.ke</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Banner -->
+    <section class="banner">
+      <h1>Get in Touch</h1>
+      <p>Reach out for a free consultation or emergency support.</p>
+    </section>
+
+    <!-- Contact Form + Info -->
+    <section class="contact-container">
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" placeholder="Phone Number" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h2>Contact Details</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Juja Town</p>
+        <p><i class="fas fa-phone"></i> +254-740-730-630</p>
+        <p><i class="fas fa-envelope"></i> dr.motherboard.ke@gmail.com</p>
+        <div class="social-links">
+          <a href="https://web.facebook.com/profile.php?id=61567455051511" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/@dr.motherboard.ke?lang=en"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Page Map Section (Add before footer) -->
+    <section class="map-section">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <!-- Google Maps Embed -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186564.17768949713!2d36.97862332433457!3d-1.158278551627327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4616a21d035d%3A0xd46c6efa3589f45f!2sJuja!5e0!3m2!1sen!2ske!4v1750330001471!5m2!1sen!2ske" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone"></i> +254-740-730-630</p>
+          <p><i class="fas fa-envelope"></i> dr.motherboard.ke@gmail.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2010 cctv@dr.motherboard.ke. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Form Validation Script -->
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Thank you! We’ll contact you shortly.");
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

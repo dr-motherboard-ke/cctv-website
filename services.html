@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services | SecureVision</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Header (Same as index.html) -->
+    <header>
+      <div class="logo">
+        <p>cctv@dr.motherboard.ke</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Services Banner -->
+    <section class="banner">
+      <h1>Our CCTV & Security Services</h1>
+      <p>Custom solutions for homes, businesses, and industries.</p>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services">
+      <div class="service-card">
+        <img src="images/residential camera.jpeg" alt="Home CCTV" />
+        <h3>Home Surveillance</h3>
+        <p>24/7 monitoring with motion detection and mobile alerts.</p>
+        <a href="contact.html" class="btn">Get Installed</a>
+      </div>
+      <div class="service-card">
+        <img src="images/office surveillance.jpeg" alt="Business CCTV" />
+        <h3>Business Security</h3>
+        <p>Multi-camera systems with cloud storage and access control.</p>
+        <a href="contact.html" class="btn">Request Demo</a>
+      </div>
+      <div class="service-card">
+        <img src="images/factory surveillance.jpeg" alt="Industrial CCTV" />
+        <h3>Industrial Solutions</h3>
+        <p>Weatherproof cameras for factories, warehouses, and remote sites.</p>
+        <a href="contact.html" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <p>"Cctv@dr.motherboard.ke installed cameras at my store, and thefts dropped by 90%!"</p>
+          <span>- John D., Retail Owner</span>
+        </div>
+        <div class="testimonial">
+          <p>"Professional service and crystal-clear night vision. Highly recommend!"</p>
+          <span>- Sarah K., Homeowner</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone"></i> +254-740-730-630</p>
+          <p><i class="fas fa-envelope"></i> dr.motherboard.ke@gmail.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2010 cctv@dr.motherboard.ke. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      document.querySelector(".menu-toggle").addEventListener("click", function () {
+        document.querySelector("nav ul").classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
